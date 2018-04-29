@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--=========CSS============-->
 	<link rel="stylesheet" type="text/css" href="css/Header_Footer.css">
+	<link rel="stylesheet" type="text/css" href="css/hamburguer_menu.css">
 	<link rel="icon" href="DEFINIR AQUI A IMAGEM DO ICONE" type="image/x-icon" >
 	<!--=========BOOTSTRAP============-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -18,7 +19,6 @@
 	</header>
 	
 	<main class="main">
-		<input type="checkbox" id="menu_Check"> <label for="menu_Check"></label>
 		<div class="MenuLateral">
 			<div class="MenuLateral_perfil">
 				<img class="perfil_img" src="img/perfil.png" alt="teste">
@@ -35,6 +35,15 @@
 				<div class="item"><img src="img/banana.png" alt="banana"><h5>Cadastro de serviços</h5></div>
 			</div>
 		</div>
+
+		<input type="checkbox" id="navicon">
+		<div class="nav-toggle">
+		  <label for="navicon" class="hamburger">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </label>
+		</div>
 		<!--===========INSIRA AQUI SEU CONTEUDO===============-->
 		<div class="conteudo">
 			<div class="titulo">
@@ -45,7 +54,6 @@
 					<h2>Cadastro de Animal</h2>
 				</div>
 			</div>
-			
 		</div>
 		<!--===========FIMM===============-->
 	</main>
