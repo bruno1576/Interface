@@ -63,7 +63,7 @@
   -o-transition: 0.2s all;
 }
 #navicon {
-  display: none;
+  display:none;
 }
 #navicon:checked ~ .sidebar {
   visibility: visible;

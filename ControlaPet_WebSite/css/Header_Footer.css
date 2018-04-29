@@ -2,8 +2,8 @@
 	margin: 0px;
 	padding: 0px;
 }
-#menu_Check{
-	display: none;
+.nav-toggle{
+	display: none!important;
 }
 header{
 	width: 100%;
@@ -15,9 +15,9 @@ header{
 	padding: 10px;
 	border-bottom: 1.5px solid black;
 }
-.MenuLateral{
+#MenuLateral{
 	width: 300px;
-	height: 900px;
+	height: auto;
 	background-color: #f4f4f4;
 	border-right: 1.5px solid black;
     -webkit-transition:  .3s; /* Safari */
@@ -120,9 +120,26 @@ small{
 
 
 
+@media (min-width: 1301px){	
+	#MenuLateral{
+		margin-left:0px!important;
+	}
+}
 @media (max-width: 1300px){	
-	.MenuLateral{
-		margin-left:-299px;
+	#MenuLateral{
+		margin-left:-290px;
+		position: absolute;
+		z-index: 100;
+		width: 250px;
+	}
+	.hamburger{
+		float: right;
+	}
+	.nav-toggle{
+		display: flex!important;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding: 0!important;
 	}
 	.conteudo{
 		padding: 30px;
@@ -133,5 +150,29 @@ small{
 	.perfil_img{
 		width: 70px;
 		height: 70px;
+	}
+}
+@media (max-width: 1000px){
+	.item h5{
+		font-size: 12px;	
+	}
+	.MenuLateral_perfil h3{
+		font-size: 15px;
+	}
+	.itens_titulo h2 {
+		font-size: 24px;
+	}
+}	
+@media (max-width: 500px){	
+	.circulo{
+		width:40px;
+		height:40px;
+	}
+	.circulo img{
+		width:25px;
+		height:25px;
+	}
+	.itens_titulo h2{
+		font-size: 20px;
 	}
 }
