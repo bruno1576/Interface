@@ -6,8 +6,6 @@ INTEGRANTES DA EQUIPE:
 
 Bruno Lima dos Santos       RA:1700713		github: bruno1576 
 
-Bruno Tomaz Santos Buzzo	RA:1700548 		github: BrunoTomasBuzzo
-
 Danilo Lopes do Nascimento  RA:1700255		github: danilo-lopess 
 
 Nayara de Paula Muniz		RA:1700239 		github: nayaram123
