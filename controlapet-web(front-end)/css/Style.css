@@ -1,5 +1,5 @@
 /**===========================Página <CadastroDeServico>===========================**/
-.inputLabel{
+.formLabel{
 	width: 150px;
 	height: 37px;
 	font-size: 17px;
@@ -7,5 +7,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 0.2px solid black;
 	border-left: 5px solid #f6b05a;
+}
+.dupla{
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+}
+.formInput{
+	width: 250px;
+	height: 37px;
+	padding-left: 10px;
 }
