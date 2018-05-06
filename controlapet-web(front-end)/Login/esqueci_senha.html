@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8"/>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+		 <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		 <link rel="stylesheet" href="css/Header_Footer.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/Style.css">
+		 <link rel="icon" href="DEFINIR AQUI A IMAGEM DO ICONE" type="image/x-icon" >
+		 <title> Esqueci senha </title>
+	 <!-- Campos provisórios de validação até os mesmo serem colocados no arquivo JS-->
+		<script language="Javascript">
+			function validacaoEmail(field) {
+			usuario = field.value.substring(0, field.value.indexOf("@"));
+			dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+	
+			if ((usuario.length >=1) &&
+				(dominio.length >=3) && 
+				(usuario.search("@")==-1) && 
+				(dominio.search("@")==-1) &&
+				(usuario.search(" ")==-1) && 
+				(dominio.search(" ")==-1) &&
+				(dominio.search(".")!=-1) &&      
+				(dominio.indexOf(".") >=1)&& 
+				(dominio.lastIndexOf(".") < dominio.length - 1)) {
+			document.getElementById("msgemail").innerHTML="E-mail válido";
+			
+			}
+			else{
+			document.getElementById("msgemail").innerHTML="<font color='black'>E-mail inválido </font>";
+			alert("E-mail invalido");
+			
+			}
+			}
+		</script>
+		 <!-- fim validações JS / Service desk agradece -->
+	
+	</head>
+	<body>
+		<header>
+		<img src="img/logoControlaPetWhite.png" alt="Controla Pet">
+		</header>
+		
+		<main class="main">
+		<div class="conteudo">
+		<div class="titulo">
+			<div class="itens_titulo">
+			<div class="circulo">
+			<img src="img/8.png">
+			</div>
+			<h2>Esqueci minha senha</h2>
+		</div>
+		</div>
+		
+	<!--===========INSIRA AQUI SEU CONTEUDO===============-->
+	
+		<div class="loginBox">
+			<img class="c_medico" src="img/medico.png">
+			<img class="c_user" src="img/perfil.png">
+			<form action="" name="femail"> 
+				<div class="inputBox">
+					<input type="text" name="email" onblur="validacaoEmail(femail.email)" maxlength="60" size='65' placeholder="Email">
+				</div>
+				<div id="msgemail"></div>
+					<input type="submit" value="Solicitar senha" onClick="">
+			</form>	
+		</div>
+		
+	
+	
+	<!--===========FIMM===============-->
+	
+	 </div>
+	 </main>
+
+	<footer>
+		<small>Controla Pet © 2018 Todos Diretos reservados. Termos e Uso e Política de Privacidade</small>
+	</footer>
+	<script src="js/hamburguer.js"></script>
+
+		<!--=========BOOTSTRAP============-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<!--=========/BOOTSTRAP============-->
+	
+	</body>
+</html>	
