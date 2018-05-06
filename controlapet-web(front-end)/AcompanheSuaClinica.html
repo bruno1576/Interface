@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Cadastro de proprietário </title> 
+	<title>Acompanhe sua clínica</title> 
 	<!--=========reset============-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--=========CSS============-->
@@ -54,111 +54,42 @@
 					<div class="circulo">
 						<img src="img/5.png" alt="banana">
 					</div>
-					<h2>Cadastro de animais</h2>
+					<h2>Acompanhe sua clínica</h2>
 				</div>
 			</div>
-			<form class="FormCad" action="submit">
-				<div class="container">
-					<div class="row">
-						<img src=" " alt="">
-						<div class="col-sm">
-							<div class="dupla">
-								<label for="#" class="formLabel">Proprietário</label>
-								<input class="formInput" type="text" placeholder="Nome">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">CPF</label>
-								<input class="formInput" type="text" placeholder="CPF">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">RG</label>
-								<input class="formInput" type="text" placeholder="RG">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">Email</label>
-								<input class="formInput" type="Email" placeholder="Email"> 
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">Telefone</label>
-								<input class="formInput" type="text" placeholder="Telefone">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">Celular</label>
-								<input class="formInput" type="text" placeholder="Celular">
-							</div>
-						</div>
-						<div class="col-sm">
-							<div class="dupla">
-								<label for="#" class="formLabel">CEP</label>
-								<input class="formInput" type="text" placeholder="CEP">
-							</div>
-							<div class="dupla">
-
-								<label for="#" class="formLabel">Endereço</label>
-								<input class="formInput" type="text" placeholder="Endereço">
-							</div>
-							
-							<div class="dupla">
-								<label for="#" class="formLabel">Número</label>
-								<input class="formInput" type="text" placeholder="Número">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">Bairro</label>
-								<input class="formInput" type="text" placeholder="Bairro">
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="titulo">
-					<div class="itens_titulo">
-						<div class="circulo">
-							<img src="img/5.png" alt="banana">
-						</div>
-						<h2>Cadastro de animal</h2>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-sm">
-							<div class="dupla">
-								<label for="#" class="formLabel">Nome</label>
-								<input class="formInput" type="text" placeholder="Nome">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">Raça</label>
-								<input class="formInput" type="text" placeholder="Raça">
-							</div>
-							<div class="dupla">
-								<label for="#" class="formLabel">Sexo</label>
-								<div class="formRadio">
-									<label><input type="radio" name="radioGenero" >Masculino</label>
-									<label><input type="radio" name="radioGenero" >Feminino</label>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm">
-							<div class="dupla">
-								<label for="#" class="formLabel">Cor</label>
-								<input class="formInput" type="text" placeholder="CEP">
-							</div>
-							<div class="dupla">
-
-								<label for="#" class="formLabel">Data de nasc.</label>
-								<input class="formInput" type="text" placeholder="Data de nascimento">
-							</div>
-
-						</div>
-					</div>
-				</div>
-				
-				<div class="ContainerBotoes">
-					<a class="btnPrincipal" href="">Cadastrar</a>
-					<a class="btnPrincipal" href="">Limpar</a>
-				</div>	
-
-			</form>
+			<div class="container-fluid">
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">Status</th>
+				      <th scope="col">Animal</th>
+				      <th scope="col">Horário</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row"><img class="circleAcompanhamento" src="img/circle_procedimento.png" alt=""></th>
+				      <td>Mark</td>
+				      <td>Otto</td>
+				    </tr>
+				    <tr>
+				      <th scope="row"><img class="circleAcompanhamento" src="img/circle_finalizado.png" alt=""></th>
+				      <td>Jacob</td>
+				      <td>Thornton</td>
+				    </tr>
+				    <tr>
+				      <th scope="row"><img class="circleAcompanhamento" src="img/circle_atrasado.png" alt=""></th>
+				      <td>Jacob</td>
+				      <td>Thornton</td>
+				    </tr>
+				    <tr>
+				      <th scope="row"><img class="circleAcompanhamento" src="img/circle_aguardando.png" alt=""></th>
+				      <td>Jacob</td>
+				      <td>Thornton</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
 
 
 			<!--===========FIMM===============-->

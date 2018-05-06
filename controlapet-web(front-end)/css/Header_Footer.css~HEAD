@@ -78,7 +78,7 @@ header{
 }
 .conteudo{
 	width: 100%;
-	padding: 20px 30px;
+	padding: 20px 50px;
 	height: auto;
 }
 .titulo{
@@ -177,12 +177,12 @@ small{
 		font-size: 24px;
 	}
 }	
-@media (max-width: 700px){
-.itens_titulo h2{
-	font-size: 20px;
+@media (max-width: 600px){	
+	small{
+		padding: 10px;
+		text-align:center;
+	}
 }
-
-}	
 @media (max-width: 500px){	
 	.circulo{
 		width:40px;
@@ -195,5 +195,7 @@ small{
 	.itens_titulo h2{
 		font-size: 20px;
 	}
+	.conteudo{
+		padding: 10px; 
+	}
 }
-

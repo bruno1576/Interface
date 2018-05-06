@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Cadastro de servico </title> 
+	<title>Cadastro de Ficha do Animal</title> 
 	<!--=========reset============-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--=========CSS============-->
@@ -23,7 +23,7 @@
 		<div id="MenuLateral">
 			<div class="MenuLateral_perfil">
 				<img class="perfil_img" src="img/perfil.png" alt="teste">
-				<h3>Pricila Santos</h3>
+				<h3 class="titulo_Cad">Pricila Santos</h3 class="titulo_Cad">
 			</div>
 			<div class="MenuLateral_itens">
 				<div class="item"><img src="img/1.png" alt="calendario"><h5><a href ="#">Calendário de vacinas</a></h5></div>
@@ -41,25 +41,152 @@
 		<div class="conteudo">
 			<input type="checkbox" id="navicon">
 			<div class="nav-toggle">
-			  <label for="navicon" class="hamburger" onclick="menuSlide();">
-			    <span></span>
-			    <span></span>
-			    <span></span>
-			  </label>
+				<label for="navicon" class="hamburger" onclick="menuSlide();">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
 			</div>
+
+			<!--===========INSIRA AQUI SEU CONTEUDO===============-->
 			<div class="titulo">
 				<div class="itens_titulo">
 					<div class="circulo">
 						<img src="img/5.png" alt="banana">
 					</div>
-					<h2>Cadastro de serviço </h2>
+					<h2>Cadastro de Ficha do Animal</h2>
 				</div>
 			</div>
+			<form class="FormCad" action="submit">
+				<h3 class="titulo_Cad">Dados do Animal</h3 class="titulo_Cad">
+				<div class="rowCad">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false" >
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="img/cachorro1.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="img/cachorro2.jpg" alt="Second slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<div class="textColumnCad">
+						<div class="SubTextColumn">
 
-		<!--===========INSIRA AQUI SEU CONTEUDO===============-->
+							<div class="dupla">
+								<label for="#" class="formLabel">Nome do animal</label>
+								<input class="formInput" type="text" placeholder="Nome do animal">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Raça</label>
+								<input class="formInput" type="text" placeholder="Raça"  >
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Sexo</label>
+								<div class="formRadio">
+									<label><input type="radio" name="radioGenero" >Masculino</label>
+									<label><input type="radio" name="radioGenero" >Feminino</label>
+								</div>
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Cor</label>
+								<input class="formInput" type="text" placeholder="Cor"  >
+							</div>
 
 
-		<!--===========FIMM===============-->
+						</div>
+
+						<div class="subTextColumn">
+							<div class="dupla">
+								<label for="#" class="formLabel">Email</label>
+								<input class="formInput" type="Email" placeholder="Email"> 
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Telefone</label>
+								<input class="formInput" type="text" placeholder="Telefone">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Celular</label>
+								<input class="formInput" type="text" placeholder="Celular">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Data de Nasc.</label>
+								<input class="formInput" type="text" placeholder="Data de Nasc."  >
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="titulo_Cad">Dados do Proprietário</h3 class="titulo_Cad">
+				<div class="rowCad">
+					<div class="textColumnCad">
+						<div class="SubTextColumn">
+
+							<div class="dupla">
+								<label for="#" class="formLabel">Proprietário</label>
+								<input class="formInput" type="text" placeholder="Proprietário">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Telefone</label>
+								<input class="formInput" type="text" placeholder="Telefone">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Endereço</label>
+								<input class="formInput" type="text" placeholder="Telefone">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Email</label>
+								<input class="formInput" type="Email" placeholder="Email">
+							</div>
+						</div>
+						<div class="SubTextColumn">
+							<div class="dupla">
+								<label for="#" class="formLabel">CEP</label>
+								<input class="formInput" type="text" placeholder="Telefone">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Celular</label>
+								<input class="formInput" type="text" placeholder="Celular">
+							</div>
+							<div class="dupla">
+								<label for="#" class="formLabel">Numero</label>
+								<input class="formInput" type="text" placeholder="Numero">
+							</div>								
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="ContainerBotoes">
+					<a class="btnPrincipal" href="">Cadastrar</a>
+					<a class="btnPrincipal" href="">Limpar</a>
+				</div>	
+				<div class="titulo">
+					<div class="itens_titulo">
+						<div class="circulo">
+							<img src="img/5.png" alt="banana">
+						</div>
+						<h2>Histórico atual/Queixa principal/Prescrição</h2>
+					</div>
+				</div>
+
+
+			</form>
+
+
+			<!--===========FIMM===============-->
 
 		</div>
 	</main>
@@ -68,6 +195,7 @@
 		<small>Controla Pet © 2018 Todos Diretos reservados. Termos e Uso e Política de Privacidade</small>
 	</footer>
 	<script src="js/hamburguer.js"></script>
+	<script src="js/scripts.js"></script>
 	<!--=========BOOTSTRAP============-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>

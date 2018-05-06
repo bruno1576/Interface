@@ -1,8 +1,13 @@
-/**===========================Página <CadastroDeServico>===========================**/
+/**===========================Página <CadastroDeProprietario & CadastroFichaAnimal>===========================**/
+.container{
+	padding: 0;
+	margin: 0;
+}
 .formLabel{
-	width: 150px;
+	width: 120px;
 	height: 37px;
-	font-size: 17px;
+	font-size: 15px;
+	color: #f6b05a;
 	font-weight: 600;
 	display: flex;
 	justify-content: center;
@@ -19,4 +24,163 @@
 	width: 250px;
 	height: 37px;
 	padding-left: 10px;
+}
+.formRadio{	
+	border:.5px solid #A9A9A9;
+	width: 250px;
+	height: 37px;
+	padding-left: 10px;	
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.formRadio label input{
+	margin-right: 5px;
+}
+.btnPrincipal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 37px;
+	background-color: #f6b05a;
+	color: #fff;
+	font-weight: 600;
+	border:1px solid #fff;
+	border-radius: 3px;
+	margin-top: 25px;
+}
+.btnPrincipal:hover{
+	border:1.5px solid #000;
+	color: #000;
+}
+.ContainerBotoes{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ContainerBotoes a{
+	margin:5px; 
+}
+.rowCad{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 20px 0 20px 0;
+}
+.carousel{
+	width: 500px;
+}
+.textColumnCad{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+.SubTextColumn{
+	margin:0 25px 0 25px;
+}
+.titulo_Cad{
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+}
+@media (max-width: 1500px) {
+	.textColumnCad{
+		width: 800px;
+	}
+	.carousel{
+		width: 350px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.rowCad{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.carousel{
+		width: 450px;
+		margin-bottom: 25px;
+	}
+	.textColumnCad{
+		width: 800px;
+	}
+
+}
+@media (max-width: 900px){
+	.textColumnCad{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 500px;
+	}
+} 
+@media (max-width: 700px) {
+	.titulo_Cad{
+		font-size: 20px;
+	}
+	.carousel{
+		width: 370px;
+	}
+}
+@media (max-width: 500px) {
+	.textColumnCad{
+		width: 370px
+	}
+	.formLabel{
+		font-size: 14px;
+		width: 120px;
+	}
+	.formInput{
+		font-size: 12px;
+	}
+	.formRadio{
+		font-size: 13px;
+	}
+}
+
+}
+@media (max-width: 450px) {
+	..btnPrincipal{
+		margin:5px!important; 
+	}
+}	
+@media (max-width: 425px) {
+	.carousel{
+		width: 300px;
+	}
+	.textColumnCad{
+		width: 300px
+	}
+	.formLabel{
+		width: 100px;
+		font-size: 12px;
+	}
+	.formInput,.formRadio{
+		width: 220px;
+	}
+
+@media (max-width: 375px) {
+	.formLabel{
+		font-size: 12px;
+
+	}
+	.formLabel{
+		width: 90px;
+		font-size: 12px;
+	}
+	.formInput,.formRadio{
+		width: 210px;
+	}
+}
+
+/**===========================Página <AcompanheSuaClinica>===========================**/
+
+.circleAcompanhamento{
+	width: 30px;
 }
