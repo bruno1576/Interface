@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Base</title> 
+	<!--=========reset============-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--=========CSS============-->
+	<link rel="stylesheet" type="text/css" href="css/Header_Footer.css">
+	<link rel="stylesheet" type="text/css" href="css/hamburguer_menu.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--=========BOOTSTRAP============-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"/>
+ 	<!--=========/BOOTSTRAP============-->
+ <link href='css/fullcalendar.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='js/lib/moment.min.js'></script>
+<script src='js/lib/jquery.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<script src='js/locale/pt-br.js'></script>
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+
+	
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay,listWeek'
+      },
+      defaultDate: Date() ,
+	  locale:'pt-br',
+      navLinks: true, //Permite navegar entre o dia e a semana.
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+	selectable : true,	  
+	  	  
+	   eventClick: function(events) {
+	   $('#visualizar #Nome').text(events.title);
+	   $('#visualizar #NomeAnimal').val(events.title);
+	   $('#visualizar #DataInicio').text(events.start.format('DD/MM/YYYY HH:mm:ss'));
+	   
+	   $('#visualizar #datahora').val(events.start.format('DD/MM/YYYY HH:mm:ss'));
+       $('#visualizar').modal('show');
+	   return false;
+	//	alert('Event: ' + calEvent.title);
+	//	alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+	//	alert('View: ' + view.name);
+
+				// change the border color just for fun
+	//		$(this).css('border-color', 'red');
+	
+     
+	  },
+	    selectHelper: true,
+	  	  select:function(start,end){
+	  $('#cadastrar #start').val(moment(start).format('DD/MM/YYYY HH:mm:ss'));
+	  $('#cadastrar #end').val(moment(end).format('DD/MM/YYYY HH:mm:ss'));
+	  $('#cadastrar').modal('show');
+	  },
+	  
+      events: [
+        {
+          title: 'Floquinho',
+          start: '2018-05-01',
+	
+        },
+        {
+          title: 'scooby',
+          start: '2018-05-07',
+          end: '2018-05-07'
+        },
+        {
+          id: 999,
+          title: 'Urso',
+          start: '2018-05-09T16:00:00'
+        },
+        {
+          id: 999,
+          title: 'Usinho',
+          start: '2018-05-16T16:00:00'
+        },
+        {
+          title: 'VOLIBEAR',
+          start: '2018-05-11',
+          end: '2018-05-11'
+        },
+        {
+          title: 'KAKA',
+          start: '2018-05-12T10:30:00',
+          end: '2018-05-12T12:30:00'
+        },
+        {
+          title: 'LULU',
+          start: '2018-03-12T12:00:00'
+        },
+        {
+          title: 'TRAVESSO',
+          start: '2018-05-12T14:30:00'
+        },
+        {
+          title: 'Pretinho',
+          start: '2018-05-12T17:30:00'
+        },
+        {
+          title: 'lala',
+          start: '2018-05-12T20:00:00'
+        },
+        {
+          title: 'Lucas',
+          start: '2018-05-13T07:00:00'
+        },
+        {
+          title: 'Lucas siqueira',
+          url: 'http://google.com/',
+          start: '2018-05-28'
+        }
+      ]
+    });
+
+  });
+
+</script>
+	
+<!--	<link rel="icon" href="DEFINIR AQUI A IMAGEM DO ICONE" type="image/x-icon" -->
+	<!--=========BOOTSTRAP============-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<!--=========/BOOTSTRAP============-->
+
+	
+	
+</head>
+<body>
+	<header>
+		<img src="img/logoControlaPetWhite.png" alt="Controla Pet">
+	</header>
+	
+	<main class="main">
+		<div id="MenuLateral">
+			<div class="MenuLateral_perfil">
+				<img class="perfil_img" src="img/perfil.png" alt="teste">
+				<h3>Pricila Santos</h3>
+			</div>
+			<div class="MenuLateral_itens">
+				<div class="item"><img src="img/1.png" alt="calendario"><h5><a href ="#">Calendário de vacinas</a></h5></div>
+				<div class="item"><img src="img/2.png" alt="ficha"><h5><a href ="#">Ficha animal</a></h5></div>
+				<div class="item"><img src="img/3.png" alt="mala"><h5><a href ="#">Acompanhe sua clínica</a></h5></div>
+				<div class="item"><img src="img/4.png" alt="coracao"><h5><a href ="#">Diagnóstico de animais</a></h5></div>
+				<div class="item"><img src="img/5.png" alt="pata"><h5><a href ="#">Cadastre um novo animal</a></h5></div>
+				<div class="item"><img src="img/6.png" alt="aviso"><h5><a href ="#">Avisos de vacinas</a></h5></div>
+				<div class="item"><img src="img/7.png" alt="agenda"><h5><a href ="#">Agenda de procedimentos</a></h5></div>
+				<div class="item"><img src="img/8.png" alt="hotel"><h5><a href ="#">Hospede um animal</a></h5></div>
+				<div class="item"><img src="img/9.png" alt="tesoura"><h5><a href ="#">Cadastro de serviços</a></h5></div>
+			</div>
+		</div>
+
+		<div class="conteudo">
+			<input type="checkbox" id="navicon">
+			<div class="nav-toggle">
+			  <label for="navicon" class="hamburger" onclick="menuSlide();">
+			    <span></span>
+			    <span></span>
+			    <span></span>
+			  </label>
+			</div>
+			<div class="titulo">
+				<div class="itens_titulo">
+					<div class="circulo">
+						<img src="img/5.png" alt="banana">
+					</div>
+					<h2>Calendário de Vacinas</h2>
+				</div>
+			</div>
+  <div id='calendar'></div>
+  
+  <div class="modal fade" id="visualizar" tabindex="-1"
+  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" >Dados do cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>	  
+	<div class="modal-body">
+	<div class="visualizar">
+	
+	
+		<dl Class = "dl-horizontal">			
+			<dt>Nome:</dt>
+			<dd id="Nome"></dd>
+             <dt>Data:</dt>
+			<dd id="DataInicio"></dd>
+		</dl>
+     </div>
+     
+	 <div class="modal-footer">
+		<button type="button" class="btn btn-canc-vis btn-warning" >Editar</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+		 </div>
+		<div class="formModal">
+		 <div class="form-group">
+    <label for="exampleInputName">Nome Dono</label>
+    <input type="text" class="form-control" id="exampleInputName" placeholder="Nome">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputName">Nome Do animal</label>
+    <input type="text" class="form-control" id="NomeAnimal" >
+  </div>
+  
+   <div class="form-group">
+    <label for="exampleInputName">Data e hora :</label>
+    <input type="text" class="form-control"  name="start" id="datahora">
+  </div>
+				
+				<button type="button" class="btn btn-canc-edit btn-primary" >Cancelar</button>
+		</div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+   <div class="modal fade" id="cadastrar" tabindex="-1"
+  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" >Cadastrar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>	  
+	<div class="modal-body">
+		<form>
+  <div class="form-group">
+    <label for="exampleInputName">Nome Dono</label>
+    <input type="text" class="form-control" id="exampleInputName" placeholder="Nome">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputName">Nome Do animal</label>
+    <input type="text" class="form-control" id="exampleInputAnimal" placeholder="Name do Animal">
+  </div>
+  
+   <div class="form-group">
+    <label for="exampleInputName">Data e hora :</label>
+    <input type="text" class="form-control"  name="start" id="start">
+  </div>
+ 
+  <button type="button" class="btn btn-warning" >Salvar</button>
+   
+</form>
+     </div>
+     
+	 <div class="modal-footer">
+
+        <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+		</div>
+	</main>
+
+	<footer>
+		<small>Controla Pet © 2018 Todos Diretos reservados. Termos e Uso e Política de Privacidade</small>
+	</footer>
+    <script >
+	$('.btn-canc-vis').on("click", function(){
+	$('.form').slideToggle();
+	$('.visualizar').slideToggle();
+	});
+		$('.btn-canc-edit').on("click", function(){
+	$('.visuaizar').slideToggle();
+	$('.form').slideToggle();
+	});
+	
+	</script>
+	<script src="js/hamburguer.js"></script>
+	<!--=========BOOTSTRAP============-->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<!--=========/BOOTSTRAP============-->
+</body>
+</html>
